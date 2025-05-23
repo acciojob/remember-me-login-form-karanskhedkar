@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <body>
+    <!-- the entire body must be written by student -->
+    <h1>Login Form</h1>
+    <form onsubmit="handleLogin(event)">
+      <input type="text" placeholder="Username" id="username" />
+      <input type="password" placeholder="Password" id="password" />
+      <label for="checkbox">Remember me.</label>
+      <input type="checkbox" id="checkbox" />
+      <button id="submit" type="submit">Submit</button>
+      <button id="existing" type="button" onclick="handleExisting(event)">Login as existing user</button>
+    </form>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
